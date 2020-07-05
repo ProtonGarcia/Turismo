@@ -3,186 +3,147 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-
+    font-family: 'roboto',sans-serif;
 }
-/*
-div{
-    border: 1px solid black;
+
+.header{
+    background-image: url('../img/banner1.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    height: 600px;
 }
-*/
 
-
-
-
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
 
 .logo{
-    position: absolute;
-    padding: 10px;
-}
-
-
-.menu{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    height: 10%;
-    overflow: hidden;
     
 }
 
-.menu ul{
-    list-style-type: none;
+.menu {
+    list-style: none;
 }
 
-.menu li{
-    float: left;
+.menu .menu-item{
+    position: relative;
+	display: inline-block;
 }
 
-.menu li a{
-    color: #fff;
+.menu .menu-item a{
+    display: block;
+    padding: 0 10px;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: 400;
-    margin-left: 30px;
-    letter-spacing: 2px;
-    font-family: sans-serif;
-    cursor: progress;
-}
-
-
-.banner img {
-    
-    background-size: cover;
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-}
-
-.container{
-    margin-top: 50px;
-    padding: 10px;
-    color: #356865;
-}
-
-.txtcont{
-    overflow: hidden;
-    padding: 5px;
-  text-align: left;
-}
-
-#h3w{
-    font-weight: 200;
-}
-
-.txtcont h3{
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 800;
-
-}
-
-.txtcont p{
-   
-    letter-spacing: 1px;
-}
-
-.imgRigth{
-    float: right;
-    padding-left: 50px;
-    width: 40%;
-   
-}
-
-.imgLeft{
-    float: left;
-    width: 40%;
-    padding-right: 50px;
-   
-}
-
-.imgLeftP3{
-    float: left;
-    width: 60%;
-    padding-right: 50px;
-   
-}
-
-.doble{
-display: flex;
-justify-content: space-around;
-margin-top: 50px;
-margin-bottom: 50px;
-
-}
-
-.txtcontDoble{
-    padding: 5px;
-    margin-top: 30px;
-    overflow: hidden;
-    width: 30%;
-    color: #356865;
-    
-}
-
-.desc {
-    padding-top: 30px;
-    margin-top: -20px;
-    background:#f3f0eb;
-    text-align: justify;
-    height: 100%;
-}
-.desc h4{
-    text-align: center;
-  text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 20px;
- 
-  
-}
-
-
-
-.txtcontDoble img
-{
-    width: 100%;
-}
-
-.txtcontent{
-    text-align: justify;
-
-    }
-
-.txtcontent img{
-width: 100%;
-}
-
-#pl{
- text-align: left;
-}
-
-.footer{
-background: #356865;
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: space-around;
-}
-
-.footer p{
-    text-align: right;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.copy strong{
-    font-weight: 200;
-}
-
-.copy{
     color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
 }
+
+.msg-principal{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#text{
+    position: relative;
+    color: #fff;
+    font-size: 8em;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+#text2{
+    position: relative;
+    color: #fff;
+    font-weight: 100;
+    font-size: 3em;
+    z-index: 1;
+    letter-spacing: 6px;
+}
+
+.container, .container-footer{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.big-card-duo{
+    margin: 100px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.big-card-duo .bg-text{
+    color: #356865;
+    margin-right: 70px;
+}
+
+.big-card-duo .bg-text h2{
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.big-card-duo .bg-text h4{
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.duo-sm-cards{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.small-card-duo {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+    
+}
+
+.small-card-duo .sm-img img{
+    width: 100%;
+    height: 250px;
+}
+
+.small-card-duo .sm-text{
+    margin-top: -20px;
+    color: #356865;
+    background: #f3f0eb;
+    padding: 15px;
+    height: 140px;
+}
+
+.footer{  
+    background: #356865;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.footer-copy{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #FFF;
+}
+
